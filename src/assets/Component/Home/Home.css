@@ -1,0 +1,33 @@
+.home-container {
+    padding: 20px;
+    /* background-color: #f8f9fa; */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text-primary {
+    color: #007bff !important;
+  }
+  
+  .lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+  
+  button {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+  }
+  
+  @media (max-width: 992px) {
+    .home-container {
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .home-container {
+      padding: 5px;
+    }
+  }
+  
