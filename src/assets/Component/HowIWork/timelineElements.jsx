@@ -9,7 +9,8 @@ const timelineElements = [
     },
     {
         title: "Second Step",
-        description: "This is the second step of my process.",
+        description: `This is the second step of my process. 
+            c c v v v v v v `,
         icon: imgZ,
         img: imgZ
     },
