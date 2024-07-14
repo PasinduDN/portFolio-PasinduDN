@@ -1,3 +1,7 @@
+import Week1 from "./Weeks/Week1";
+import Week2 from "./Weeks/Week2";
+import Week3 from "./Weeks/Week3";
+
 function WeeklyTarget() {
     return (
         <div>
@@ -15,9 +19,10 @@ function WeeklyTarget() {
                             </button>
                         </h2>
                         <div id="flush-collapseOne12" className="accordion-collapse collapse" aria-labelledby="flush-headingOne12" data-bs-parent="#nestedAccordion">
-                            <div className="accordion-body btn">
+                            <div className="accordion-body ">
                                 {/* Content for Week 01 */}
-                                Placeholder content for Week 01. <br /> <code> See More</code>
+                                Placeholder content for Week 01. <br />
+                                <button className="btn" data-bs-toggle="modal" data-bs-target="#idOfWeek01"><code> See More</code> </button>
                             </div>
                             {/* <div className="btn btn-outline-info custom-button">See More</div> */}
                         </div>
@@ -32,7 +37,8 @@ function WeeklyTarget() {
                         <div id="flush-collapseOne13" className="accordion-collapse collapse" aria-labelledby="flush-headingOne13" data-bs-parent="#nestedAccordion">
                             <div className="accordion-body btn">
                                 {/* Content for Week 02 */}
-                                Placeholder content for Week 02. <br /> <code> See More</code>
+                                Placeholder content for Week 02. <br />
+                                <button className="btn"><code> See More</code> <Week2></Week2></button>
                             </div>
                         </div>
                     </div>
@@ -46,13 +52,38 @@ function WeeklyTarget() {
                         <div id="flush-collapseOne14" className="accordion-collapse collapse" aria-labelledby="flush-headingOne14" data-bs-parent="#nestedAccordion">
                             <div className="accordion-body btn">
                                 {/* Content for Week 03 */}
-                                Placeholder content for Week 03. <br /> <code> See More</code>
+                                Placeholder content for Week 03. <br />
+                                <button className="btn"><code> See More</code> <Week3></Week3> </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            {/* Week 01 */}
+            <div class="modal " id="idOfWeek01" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <Week1></Week1>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
         </div>
+
+
+
     );
 }
 

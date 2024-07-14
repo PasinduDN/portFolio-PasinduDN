@@ -9,6 +9,7 @@ import Home from './assets/Component/Home/Home'
 import HowIWork from './assets/Component/HowIWork/HowIWork'
 import Projects from './assets/Component/Projects'
 
+
 function App() {
   const [count, setCount] = useState(0)
   const [component, setComponent] = useState(<Home></Home>)
